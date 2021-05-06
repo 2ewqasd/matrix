@@ -16,6 +16,10 @@ def fill(matrix):
     for i in range(len(matrix)):
         matrix[i][i] = 1
 
+def refill(matrix):
+    for i in range(len(matrix)):
+        matrix[i][-i - 1] = 2
+
 def main():
     matrix = init_matrix()
     fill(matrix)
