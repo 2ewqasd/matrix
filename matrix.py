@@ -32,6 +32,12 @@ def low_null(matrix):
             if (j <= i):
                 matrix[i][j] = 4
 
+def right(matrix):
+    n = len(matrix)
+    for i in range(n):
+        for j in range(n//2, n):
+            matrix[i][j] = 5
+
 def main():
     matrix = init_matrix()
     fill(matrix)
@@ -40,6 +46,8 @@ def main():
     upper_null(matrix)
     pprint(matrix)
     low_null(matrix)
+    pprint(matrix)
+    right(matrix)
     pprint(matrix)
 
 if __name__ == '__main__':
