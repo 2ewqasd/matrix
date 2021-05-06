@@ -19,7 +19,6 @@ def fill(matrix):
 def main():
     matrix = init_matrix()
     fill(matrix)
-    refill(matrix)
     pprint(matrix)
 
 if __name__ == '__main__':
