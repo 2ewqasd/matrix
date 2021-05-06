@@ -12,8 +12,14 @@ def init_matrix():
             matrix[i].append(random.randint(0, 100))
     return matrix
 
+def fill(matrix):
+    for i in range(len(matrix)):
+        matrix[i][i] = 1
+
 def main():
     matrix = init_matrix()
+    fill(matrix)
+    refill(matrix)
     pprint(matrix)
 
 if __name__ == '__main__':
